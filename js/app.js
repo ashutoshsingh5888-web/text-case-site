@@ -9,7 +9,7 @@ e("section",{className:"hero"},
 e("div",{className:"title"},"Text Case Converter"),
 
 e("div",{className:"subtitle"},
-"Convert text instantly with a right click."
+"Convert text instantly using the right-click menu"
 ),
 
 e("button",{className:"install"},
@@ -18,20 +18,10 @@ e("button",{className:"install"},
 
 ),
 
-e("section",{className:"section"},
+e("section",{className:"features"},
 
-e("h2",null,"Supported Cases"),
-
-e("div",{className:"features"},
-
-e("div",{className:"card"},"UPPERCASE"),
-e("div",{className:"card"},"lowercase"),
-e("div",{className:"card"},"Title Case"),
-e("div",{className:"card"},"camelCase"),
-e("div",{className:"card"},"snake_case"),
-e("div",{className:"card"},"kebab-case")
-
-)
+["UPPERCASE","lowercase","Title Case","camelCase","snake_case","kebab-case"]
+.map(c => e("div",{className:"card"},c))
 
 )
 
